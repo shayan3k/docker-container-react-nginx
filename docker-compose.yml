@@ -8,7 +8,8 @@ services:
       dockerfile: Dockerfile
       context: ./nginx
     ports:
-      - "443:80"
+      - "80:80"
+      - "443:443"
   client:
     stdin_open: true
     environment:
