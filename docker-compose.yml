@@ -9,8 +9,6 @@ services:
       context: ./nginx
     ports:
       - "80:80"
-    volumes:
-      - ./data/certs:/etc/nginx/certs
   client:
     stdin_open: true
     environment:
